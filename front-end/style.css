@@ -42,14 +42,16 @@ h2, p{
 } 
 
 .botaes{
+    display: flex;
+    flex-direction: row;
+    
     border: 1px solid #0acafa;  
     padding: 2mm;
-    padding-top: 5mm;
-    padding-bottom: 5mm;
     border-radius: 5mm; 
 }
 
 a{
+    display: block;
     padding: 2mm;
     margin: 1mm;
     border: 1px solid rgb(9, 172, 248);
