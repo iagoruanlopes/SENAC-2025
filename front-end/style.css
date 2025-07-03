@@ -44,7 +44,7 @@ h2, p{
 .botaes{
     display: flex;
     flex-direction: row;
-    
+    flex-wrap: wrap;
     border: 1px solid #0acafa;  
     padding: 2mm;
     border-radius: 5mm; 

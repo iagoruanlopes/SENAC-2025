@@ -1,0 +1,16 @@
+
+#btn{ 
+    background-color: black;
+    color: blue;
+    border-radius: 5px;
+    padding: 1mm;
+}
+
+#circo{ 
+    background-color: brown;
+    padding: 20px;
+    text-align: center;
+    border: 2px; 
+    border-radius: 10px;
+    
+}
