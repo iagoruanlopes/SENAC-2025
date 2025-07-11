@@ -1,4 +1,6 @@
-     var text = 'Rato roeu a roupa do Rei de roma'
+
+
+ var text = 'Rato roeu a roupa do Rei de roma'
      var palavras = text.split(' ')
          for (let i = 0; i< palavras.length; i++){
 // Alert(palavras[i])

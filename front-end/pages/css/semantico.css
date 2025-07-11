@@ -1,0 +1,73 @@
+
+
+
+*{
+      margin: 0;
+      padding: 0;
+}
+
+html, body{
+      width: 100%;
+      min-height: 100vh;
+      height: 100%;
+}
+
+header{
+      height: 100px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      background-color: rgba(255, 196, 0, 0.89);
+}
+
+main{
+      min-height: calc(100% - 100px);
+      height: 100%;
+      background-image: url(https://marketplace.canva.com/EAFlJ74vIf0/2/0/900w/canva-story-3-passos-do-sucesso-amarelo-fitness-gqFIkIxzSfI.jpg);
+      background-size: cover;
+      background-position: center;
+      display: flex;
+      flex-direction: column;
+} 
+
+footer{
+      width: 100x;
+      height: 200px;
+      background-color:rgb(255, 196, 0, 0.89);
+      position: relative;
+}
+
+nav{
+      font-size: 150%;
+}
+
+nav a{
+      color: rgb(255, 241, 241);
+      text-decoration: none;
+      box-shadow: 5px 5px 50px;
+      font-size: 24px;
+      padding: 10px;
+      border: 1px solid rgb(0, 0, 0);
+}
+
+nav a:hover{
+      border: 1px solid white;
+      border-radius: 5px;
+      background-color: black;
+}
+
+.flex{
+      display: flex;
+}
+
+.card{
+      width: 150px;
+      height: 100px;
+      background-color: rgb(255, 196, 0, 0.89);
+      border: 1px solid rgb(255, 196, 0, 0.89);
+}
+
+.landing{
+      width: 100%;
+      height: calc(100% - 200px);
+}
