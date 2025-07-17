@@ -25,7 +25,7 @@ var produto = {
 
 }
 
-var produtos = // lista de produtos
+var produtos = 
    [
        { 
          "nome": "celular 01",
