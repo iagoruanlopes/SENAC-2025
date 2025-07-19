@@ -46,6 +46,13 @@ class Aluno extends Pessoa{
   }
 }
 
-function Poo(){
-  const Servidor1 = new Servidor("Paulo", "19", "Masculino", "")
+function Poo() {
+
+    const servidor1 = new Servidor("João", "20", "Masculino", "Brasileiro", "Diretor");
+    const professor1 = new Professor("José", "23", "Masculino", "Brasileiro", 2500.00);
+    const aluno1 = new Aluno("Henrique", "17", "Masculino", "Brasileiro", "Cursando o Ensino Médio");
+
+    alert(servidor1.exibirDetalhes());
+    alert(professor1.exibirDetalhes());
+    alert(aluno1.exibirDetalhes());
 }

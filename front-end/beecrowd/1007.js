@@ -2,6 +2,11 @@ var input = require('fs').readFileSync('/Users/Aluno/Documents/GitHub/SENAC-2025
 var lines = input.split('\n'); // lines é um array
 //==========================================================
 
-let a = parseFloat(lines[0])
-let x = 3.14159 * a * a
-console.log("A="+x.toFixed(4))
+let A = parseInt(lines.shift())
+let B = parseInt(lines.shift())
+let C = parseInt(lines.shift())
+let D = parseInt(lines.shift())
+
+var DIFERENCA = (A * B - C * D)
+
+console.log("DIFERENCA = "+DIFERENCA)

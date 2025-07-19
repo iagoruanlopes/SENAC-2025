@@ -2,6 +2,10 @@ var input = require('fs').readFileSync('/Users/Aluno/Documents/GitHub/SENAC-2025
 var lines = input.split('\n'); // lines é um array
 //==========================================================
 
-let a = parseFloat(lines[0])
-let x = 3.14159 * a * a
-console.log("A="+x.toFixed(4))
+
+var v1 = parseInt(lines.shift())
+var v2 = parseInt(lines.shift())
+
+var PROD = v1 * v2;
+
+console.log("PROD = "+ PROD)

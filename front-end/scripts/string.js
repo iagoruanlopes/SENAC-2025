@@ -20,6 +20,6 @@ for (let i = 0; i < palavras.length;i++){
         soma++
        }
 }
-alert(soma)
-alert(text)
+// alert(soma)
+// alert(text)
 
