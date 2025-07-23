@@ -40,14 +40,17 @@ container.appendChild(topo)
 
 //#region MAIN
 
-var div = document.createElement('div')
-containerTopo.className = 'meio'
+var main = document.createDocumentFragment()
+var containerMain = document.createElement('div')
+containerMain.className = 'main'
 
+var quadrado = document.createElement('a')
+quadrado.setAttribute('href', '#')
+quadrado.querySelectorAll("quadrado")
 
-containerTopo.append(meio)
-container.appendChild(meio)
-
-container.appendChild(div)
+main.appendChild(quadrado)
+main.appendChild(containerMain)
+container.appendChild(main)
 
 // #endregion
 
