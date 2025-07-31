@@ -25,9 +25,9 @@ body {
 .form-holder {
     width: 300px;
     padding: 20px;
-    background-color: rgb(1, 6, 247);
+    background-color: rgb(255, 255, 255);
     border: 5px solid #000000;
-    box-shadow: 0px 0px 30px rgb(20, 3, 255);
+    box-shadow: 0px 0px 30px rgb(3, 104, 255);
     border-radius: 30px;
     display: flex;
     flex-direction: column;
@@ -48,74 +48,91 @@ h1 {
 }
 
 #btn {
-    background-color: rgb(247, 247, 255);
+    background-color: rgb(1, 58, 245);
     height: 40px;
     border-radius: 10px;
 }
-:root{
-  --cor-azul: #0400ff;
-  --cor-preto: #000000;
-}
-.title { color: var(--cor-azul);}
-.texto { color: var(--cor-preto);}
+.box-social    { 
 
+  margin: auto;
+  display: table;
 
-:root {
-  --cor-azul: #0e12f7;
-  --cor-hover: #000000;
 }
-.btn {
-  padding:0.2em 1em;
-  border-radius:50px;
-  display:inline-block;
+
+.box-social li {  
+
+  float:left; 
+  text-align:center; 
+  margin: 5px;
+
 }
-.btn-neon {
-  border:4px solid var(--cor-azul);
+
+.fa {
+  font-size: 32px !important;
+  margin-top: 23%;
+}
+
+.icone-box-facebook {
+  width: 53px;
+  height: 53px;
+  background-color:#3b5998;
+  color: #fff;
+}
+
+.icone-box-instagram {
+  width: 53px;
+  height: 53px;
+  background:hsl(0 0% 10%);
+  background: radial-gradient(circle at 30% 107%, #fdf497 0%, #fdf497 5%, #fd5949 45%,#d6249f 60%,#285AEB 90%);
+  color:#fff;
+}
+
+.icone-box-twitter {
+  width: 53px;
+  height: 53px;
+  background-color:#00aced;
+  color: #fff;
+}
+
+.icone-box-youtube {
+  width: 53px;
+  height: 53px;
+  background-color:#dd4b39;
+  color:#fff;
+}
+
+/* SOMBRA BASE */
+
+.sombra-base {
+
+  display: inline-block;
   position: relative;
-  text-transform: capitalize;
-  text-decoration:none;
-  color: var(--cor-azul);
-  background-color: transparent;
-  cursor: pointer;
-  font-size: 2em;
-  font-family: 'open_sansregular';
-  transition:0.4s;
-  text-shadow: 0 0 0.125em rgba(0, 0, 0, 0.5), 0 0 0.25em currentColor;
-  box-shadow: inset 0 0 0.5em 0 var(--cor-azul), 0 0 0.5em 0 var(--cor-azul);
+  transition-duration: 0.3s;
+  transition-property: transform;
+  -webkit-tap-highlight-color: transparent;
+  transform: translateZ(0);
+  box-shadow: 0 0 1px transparent;
+  border-radius: 50px;
+
 }
-.btn-neon:hover {
-  color: var(--cor-hover);
-  border:4px solid var(--cor-hover);
-  transition:0.4s;
-  text-shadow: none;
-}
-.btn-neon:hover:after {
-  opacity: 1;
-}
-.btn-neon:hover:before {
-  opacity: 1;
-}
-.btn-neon:before, .btn-neon:after {
-  content: "";
+
+.sombra-base:before {
+
+  pointer-events: none;
   position: absolute;
-  transition: opacity 100ms linear;
-  background-color: var(--cor-azul);
-}
-.btn-neon:before {
-  top: 120%;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  transform: perspective(1em) rotateX(40deg) scale(1, 0.35);
-  filter: blur(1em);
-  opacity: 0.5;
-}
-.btn-neon:after {
-  top: 0;
-  right: 0;
-  bottom: 0;
-  left: 0;
   z-index: -1;
-  box-shadow: 0 0 0.75em 0.25em var(--cor-azul), 0 0 0.75em 1em var(--cor-azul);
+  content: '';
+  top: 100%;
+  left: 5%;
+  height: 10px;
+  width: 90%;
   opacity: 0;
+  background: radial-gradient(ellipse at center, rgba(0, 0, 0, 0.35) 0%, rgba(0, 0, 0, 0) 80%);
+  transition-duration: 0.3s;
+  transition-property: transform opacity;
+
 }
+
+.sombra-base:hover        { transform: translateY(-6px); }
+.sombra-base:hover:before { opacity: 1; transform: translateY(6px); }
+
