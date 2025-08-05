@@ -2,9 +2,12 @@ var input = require('fs').readFileSync('/Users/Aluno/Documents/GitHub/SENAC-2025
 var lines = input.split('\n'); // lines é um array
 //==========================================================
 
-let x = parseInt(lines[0])
-let y = parseFloat(lines[1])
+let tempoGasto = parseInt(lines.shift())
+let velocidadeMedia = parseInt(lines.shift())
+let kml = 12
 
-let consumoMedio = x / y
+let distanciaPercorrida = tempoGasto * velocidadeMedia
 
-console.log(`${consumoMedio.toFixed(3)} km/l`)
+let litros = distanciaPercorrida / kml
+
+console.log(`${litros.toFixed(3)}`)
