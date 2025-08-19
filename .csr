@@ -1,0 +1,2 @@
+PORT=3333
+MONGO_URI="mongodb+srv://ruaniago25:lUP9Qzr4fXewsyKY@personal.xatmdq5.mongodb.net/?retryWrites=true&w=majority&appName=personal"
